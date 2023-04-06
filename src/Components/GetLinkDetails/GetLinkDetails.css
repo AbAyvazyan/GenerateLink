@@ -1,0 +1,46 @@
+.helpful_link{
+    position: absolute;
+    left: 5%;
+    top: 38%;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: #000000;
+}
+
+.large_line{
+    width: 0;
+    height: 40%;
+    position: absolute;
+    left: -0.5px;
+    top: 15%;
+    border: 1px solid #EBE4FF;
+}
+
+.large_line_increased{
+    width: 0;
+    height: 57%;
+    position: absolute;
+    left: -0.5px;
+    top: 15%;
+    border: 1px solid #EBE4FF;
+    animation: increasingLargeLine 1s ease-in-out forwards;
+}
+
+.get_input_id{
+    position: absolute;
+    top: 52.5%;
+    left: 5%;
+}
+
+@keyframes increasingLargeLine {
+    from{
+        height: 40%;
+    }
+
+    to{
+        height: 57%;
+    }
+}

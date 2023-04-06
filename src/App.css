@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.link_generator_part{
+    width: 1100px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.light_line{
+    width: 0;
+    height: 25%;
+    position: absolute;
+    left: -0.5px;
+    top: 15%;
+    border: 1px solid #EBE4FF;
+    /*animation: decreasingLine 1s;*/
+}
+
+.light_line_increased{
+    width: 0;
+    height: 25%;
+    position: absolute;
+    left: -0.5px;
+    top: 15%;
+    border: 1px solid #EBE4FF;
+    animation: increasingLine 1s ease-in-out forwards;
+}
+
+.light_circle{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left:-24px;
+    top: 10%;
+    background: #EBE4FF;
+    border-radius: 48px;
+}
+
+.info_text{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: #000000;
+}
+
+.light_circle_little{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: -12px;
+    background: #EBE4FF;
+    border-radius: 48px;
+}
+
+.toggle_circle{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: -12px;
+    background: #EBE4FF;
+    border-radius: 48px;
+    opacity: 0;
+    animation-delay: 4s;
+    animation: toggleCircle 1s ease-in-out forwards;;
+}
+
+.get_link{
+    position: absolute;
+    top: 37%;
+    left: 5%;
+}
+
+.get_link input , .get_input_id input{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #727586;
+}
+
+.continue_button{
+    position: absolute;
+    width: 164px;
+    height: 34px;
+    left: 5%;
+    top: 54%;
+    background: #EBE4FF;
+    border-radius: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    cursor: pointer;
+    color: #673DE6;
+    opacity: 0;
+    animation-delay: 4s;
+    animation: buttonAnimate 1s ease-in-out forwards;;
+}
+@keyframes buttonAnimate {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes increasingLine {
+    from{
+        height: 25%;
+    }
+
+    to{
+        height: 40%;
+    }
+}
+
+/*@keyframes decreasingLine {*/
+/*    from{*/
+/*        height: 40%;*/
+/*    }*/
+
+/*    to{*/
+/*        height: 25%;*/
+/*    }*/
+/*}*/
+
+@keyframes toggleCircle {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}

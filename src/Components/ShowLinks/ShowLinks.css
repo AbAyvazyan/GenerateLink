@@ -1,0 +1,23 @@
+.very_large_line{
+    width: 0;
+    height: 70%;
+    position: absolute;
+    left: -0.5px;
+    top: 15%;
+    border: 1px solid #EBE4FF;
+}
+
+.your_link{
+    position: absolute;
+    left: 5%;
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    /* identical to box height */
+
+
+    color: #673DE6;
+}
