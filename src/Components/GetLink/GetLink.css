@@ -1,0 +1,29 @@
+.get_link{
+    position: absolute;
+    top: 37%;
+    left: 5%;
+    width: 100%;
+}
+
+.get_link label{
+    position: absolute;
+    left: 0;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: #727586;
+}
+
+.get_link input , .get_input_id input{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #727586;
+}

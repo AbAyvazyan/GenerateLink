@@ -1,12 +1,24 @@
 import TextAnimation from "../TextAnimation";
-import {useState} from "react";
+import {useEffect,useState} from "react";
+
+import './GetLink.css'
 
 const GetLink = ({continueButtonHandler}) => {
 
     const [validated,setValidated] = useState(false)
     const [inputValue,setInputValue] = useState('')
+    const [labelFor,setLabelFor] = useState(false)
+
+
 
     const InputLengthChecker = (e) =>{
+
+        if(e.target.value.length>0){
+            setLabelFor(true)
+        }else{
+            setLabelFor(false)
+        }
+
         if(e.target.value.length>=7){
             setValidated(true)
             setInputValue(e.target.value)
@@ -15,6 +27,8 @@ const GetLink = ({continueButtonHandler}) => {
             setInputValue('')
         }
     }
+
+
     return(
         <div className={'link_generator_part'}>
 
@@ -23,7 +37,11 @@ const GetLink = ({continueButtonHandler}) => {
             </div>
 
             <div className={'get_link'}>
-                <input type="text" onChange={(e)=>InputLengthChecker(e)} placeholder={'Paste or type link here ...'}/>
+                <input type="text" id={'get_link'} onChange={(e)=>InputLengthChecker(e)}/>
+
+                <label htmlFor={'get_link'} className={labelFor && 'disappear'}>
+                    <TextAnimation text={'Paste or type link here ...'} delay={1500}/>
+                </label>
             </div>
 
             {validated && <div className={'continue_button'} onClick={()=>continueButtonHandler(inputValue)}>Continue &#8594;</div>}
@@ -36,5 +54,5 @@ const GetLink = ({continueButtonHandler}) => {
         </div>
     )
 }
-
+//Paste or type link here ...'
 export default GetLink

@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('./fonts/static/Quicksand-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('./fonts/static/Quicksand-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
 body{
     margin: 0;
     padding: 0;
@@ -75,23 +90,7 @@ body{
     animation: toggleCircle 1s ease-in-out forwards;;
 }
 
-.get_link{
-    position: absolute;
-    top: 37%;
-    left: 5%;
-}
 
-.get_link input , .get_input_id input{
-    font-family: 'Quicksand';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 45px;
-    border: none;
-    outline: none;
-    background-color: transparent;
-    color: #727586;
-}
 
 .continue_button{
     position: absolute;
@@ -115,6 +114,12 @@ body{
     animation-delay: 4s;
     animation: buttonAnimate 1s ease-in-out forwards;;
 }
+
+
+.disappear{
+    display: none;
+}
+
 @keyframes buttonAnimate {
     from{
         opacity: 0;

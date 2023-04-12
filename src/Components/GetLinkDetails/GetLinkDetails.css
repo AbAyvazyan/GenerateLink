@@ -33,6 +33,18 @@
     position: absolute;
     top: 52.5%;
     left: 5%;
+    width: 100%;
+}
+
+.get_input_id label{
+    position: absolute;
+    left: 0;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    color: #727586;
 }
 
 @keyframes increasingLargeLine {

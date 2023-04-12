@@ -8,8 +8,18 @@ const GetLinkDetails = ({openSHowModal}) => {
 
     const [validated,setValidated] = useState(false)
     const [inputValue,setInputValue] = useState('')
+    const [labelFor,setLabelFor] = useState(false)
+
+
 
     const InputLengthChecker = (e) =>{
+
+        if(e.target.value.length>0){
+            setLabelFor(true)
+        }else{
+            setLabelFor(false)
+        }
+
         if(e.target.value.length>=7){
             setValidated(true)
             setInputValue(e.target.value)
@@ -27,11 +37,15 @@ const GetLinkDetails = ({openSHowModal}) => {
             </div>
 
             <a className={'helpful_link'}>
-                <TextAnimation text={'If you don’t know how to get it here’s the link'} additional={'&#128279;'}/>
+                <TextAnimation text={'If you don’t know how to get it here’s the link'} delay={1300}/>
             </a>
 
             <div className={'get_input_id'}>
-                <input type="text" onChange={(e)=>InputLengthChecker(e)} placeholder={'Paste or type link here ...'}/>
+                <input type="text" id={'get_input_id'} onChange={(e)=>InputLengthChecker(e)}/>
+
+                <label htmlFor={'get_input_id'} className={labelFor && 'disappear'}>
+                    <TextAnimation text={'Paste or type link here ...'} delay={2100}/>
+                </label>
             </div>
 
             {validated && <div className={'continue_button'} onClick={()=>openSHowModal()} style={{top:'69%'}}>Continue &#8594;</div>}

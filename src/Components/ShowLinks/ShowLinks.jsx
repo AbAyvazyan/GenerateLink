@@ -13,19 +13,19 @@ const ShowLinks = () =>{
             </div>
 
             <div className={'helpful_link'}>
-                <TextAnimation text={'Link For IOS'} additional={'&#128279;'}/>
+                <TextAnimation text={'Link For IOS'} delay={2500}/>
             </div>
 
             <a className={'your_link'}  style={{top: '53%'}}>
-                <TextAnimation text={'fb://profile/100008373994021'} additional={'&#128279;'}/>
+                <TextAnimation text={'fb://profile/100008373994021'} delay={2800}/>
             </a>
 
             <div className={'helpful_link'} style={{top: '68%'}}>
-                <TextAnimation text={'Link For Android'} additional={'&#128279;'}/>
+                <TextAnimation text={'Link For Android'} delay={3300}/>
             </div>
 
             <a className={'your_link'}  style={{top: '83%'}}>
-                <TextAnimation text={'fb://profile/100008373994021'} additional={'&#128279;'}/>
+                <TextAnimation text={'fb://profile/100008373994021'} delay={3500}/>
             </a>
 
 
