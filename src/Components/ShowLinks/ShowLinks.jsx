@@ -16,15 +16,15 @@ const ShowLinks = () =>{
                 <TextAnimation text={'Link For IOS'} delay={2500}/>
             </div>
 
-            <a className={'your_link'}  style={{top: '53%'}}>
+            <a className={'first_link your_link'}>
                 <TextAnimation text={'fb://profile/100008373994021'} delay={2800}/>
             </a>
 
-            <div className={'helpful_link'} style={{top: '68%'}}>
+            <div className={'for_android helpful_link'}>
                 <TextAnimation text={'Link For Android'} delay={3300}/>
             </div>
 
-            <a className={'your_link'}  style={{top: '83%'}}>
+            <a className={'second_link your_link'}>
                 <TextAnimation text={'fb://profile/100008373994021'} delay={3500}/>
             </a>
 

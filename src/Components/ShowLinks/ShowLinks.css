@@ -16,10 +16,19 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 45px;
-    /* identical to box height */
-
-
     color: #673DE6;
+}
+
+.first_link{
+    top: 53%;
+}
+
+.for_android{
+    top: 68%;
+}
+
+.second_link{
+    top: 83%;
 }
 
 @media only screen and (max-width: 11260px) {
@@ -46,5 +55,17 @@
     .your_link{
         font-size: 15px;
         left: 10%;
+    }
+
+    .first_link{
+        top: 52%;
+    }
+
+    .for_android{
+        top: 67%;
+    }
+
+    .second_link{
+        top: 82%;
     }
 }

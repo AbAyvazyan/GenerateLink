@@ -39,7 +39,7 @@ const GetLink = ({continueButtonHandler}) => {
             <div className={'get_link'}>
                 <input type="text" id={'get_link'} onChange={(e)=>InputLengthChecker(e)}/>
 
-                <label htmlFor={'get_link'} className={labelFor && 'disappear'}>
+                <label htmlFor={'get_link'} className={labelFor ? 'disappear' : ''}>
                     <TextAnimation text={'Paste or type link here ...'} delay={1500}/>
                 </label>
             </div>
@@ -54,5 +54,5 @@ const GetLink = ({continueButtonHandler}) => {
         </div>
     )
 }
-//Paste or type link here ...'
+
 export default GetLink

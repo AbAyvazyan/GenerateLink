@@ -24,7 +24,6 @@ const App = () =>{
         setShowPart(true)
     }
 
-    console.log(link)
 
   return(
       <>
