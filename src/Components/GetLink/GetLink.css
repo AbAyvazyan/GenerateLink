@@ -16,7 +16,7 @@
     color: #727586;
 }
 
-.get_link input , .get_input_id input{
+.get_link input{
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 400;
@@ -26,4 +26,47 @@
     outline: none;
     background-color: transparent;
     color: #727586;
+}
+
+@media only screen and (max-width: 1126px) {
+    .get_link label{
+        font-size:25px ;
+    }
+
+    .get_link input{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 876px) {
+    .get_link label{
+        font-size:20px ;
+
+    }
+
+    .get_link input {
+        font-size: 20px;
+
+    }
+
+    .get_link{
+        left: 8%;
+    }
+}
+
+@media only screen and (max-width: 706px) {
+    .get_link label{
+        font-size:17px ;
+
+    }
+
+    .get_link input {
+        font-size: 17px;
+
+    }
+
+    .get_link{
+        left: 10%;
+        top: 36%;
+    }
 }

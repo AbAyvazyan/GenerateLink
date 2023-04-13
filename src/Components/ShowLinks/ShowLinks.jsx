@@ -6,7 +6,7 @@ const ShowLinks = () =>{
 
         <div className={'link_generator_part'}>
 
-            <div className={'info_text'} style={{top:'1%'}}>
+            <div className={'show_link_info info_text'} >
                 <TextAnimation text={'Here you go. We assure you if user will open this links in \n' +
                     'mobile browser and the application will be installed your page\n' +
                     'will be opened in application'}/>

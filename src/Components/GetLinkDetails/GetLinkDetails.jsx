@@ -32,7 +32,7 @@ const GetLinkDetails = ({openSHowModal}) => {
     return(
         <div className={'link_generator_part'}>
 
-            <div className={'info_text'} style={{top:'5%'}}>
+            <div className={'details_link_info info_text'}>
                 <TextAnimation text={'Please also provide your facebook id for getting more accurate local link'}/>
             </div>
 

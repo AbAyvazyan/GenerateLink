@@ -36,6 +36,18 @@
     width: 100%;
 }
 
+.get_input_id input{
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #727586;
+}
+
 .get_input_id label{
     position: absolute;
     left: 0;
@@ -54,5 +66,64 @@
 
     to{
         height: 57%;
+    }
+}
+
+
+@media only screen and (max-width: 1126px) {
+    .helpful_link{
+        font-size: 25px;
+    }
+
+    .get_input_id input{
+        font-size: 25px;
+    }
+
+    .get_input_id label{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 876px) {
+    .helpful_link{
+        font-size: 20px;
+        left: 8%;
+    }
+
+    .get_input_id input{
+        font-size: 20px;
+    }
+
+    .get_input_id label{
+        font-size: 20px;
+    }
+
+    .get_input_id{
+        left: 8%;
+    }
+}
+
+@media only screen and (max-width: 706px) {
+    .details_link_info{
+        top: 7%!important;
+    }
+
+    .helpful_link{
+        font-size: 13px;
+        top: 37%;
+        left: 10%;
+    }
+
+    .get_input_id input{
+        font-size: 15px;
+    }
+
+    .get_input_id label{
+        font-size: 15px;
+    }
+
+    .get_input_id{
+        left: 10%;
+        top: 52%;
     }
 }

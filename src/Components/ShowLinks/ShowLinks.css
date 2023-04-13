@@ -21,3 +21,30 @@
 
     color: #673DE6;
 }
+
+@media only screen and (max-width: 11260px) {
+    .your_link{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 876px) {
+    .your_link{
+        font-size: 20px;
+    }
+
+    .show_link_info{
+        top: 3%!important;
+    }
+}
+
+@media only screen and (max-width: 706px) {
+    .show_link_info{
+        top: 0!important;
+    }
+
+    .your_link{
+        font-size: 15px;
+        left: 10%;
+    }
+}
